@@ -6,7 +6,7 @@ greywhite = Color(0xF5F5F5, 1.0)
 
 thinline = LineStyle(1, greywhite)
 
-rectangle = RectangleAsset(50, 50, thinline, oragne)
+rectangle = RectangleAsset(50, 20, thinline, oragne)
 
 
 myapp = App()
