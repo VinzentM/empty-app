@@ -7,15 +7,20 @@ lightblue = Color(0x03A9F4, 1.0)
 oceanblue = Color(0x283593, 1.0)
 beachyellow = Color(0xFFD54F, 1.0)
 
+
+no-line = LineStyle(0, greywhite)
 thinline = LineStyle(1, greywhite)
+
 background = RectangleAsset(1920, 1080, thinline, lightblue)
-face = CircleAsset(180, thinline, darkoragne)
+sun = CircleAsset(180, thinline, darkoragne)
 ocean = RectangleAsset(1920, 1000, thinline, oceanblue)
-beach = RectangeAsset(1920, 1000, thinline, beachyellow)
+beach = RectangleAsset(1920, 1000, thinline, beachyellow)
+reflection = RectangleAsset(30, 30, no-line, reflectionyellow)
 
 Sprite(background)
-Sprite(face, (210, 350))
+Sprite(sun, (1310, 350))
 Sprite(ocean, (0, 400))
+Sprite(beach, (0, 700))
 
 myapp = App()
 myapp.run()
